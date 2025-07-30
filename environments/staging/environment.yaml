@@ -5,7 +5,7 @@ version: 1.0
 app:
   # build id to deploy. if 'version' is commented out, the application is not deployed
 
-  version: "40c2481e-2de4-4e97-99bf-2f0cfa3b1fdd"
+  version: "97881463-a054-4c08-b7c9-2d45ba0bf7bd"
   # version: ""
   
   # number of instances
@@ -57,7 +57,7 @@ app:
     - name: APP_SESSIONDB_HOSTNAME
       value: easej-svt-vm.purple-mystic-butterfly.com
     - name: APP_SESSIONDB_PORT
-      value: "60015"
+      value: "60025"
     - name: APP_SESSIONDB_USER
       value: db2inst1
 
@@ -67,3 +67,26 @@ app:
   #    value: "https://rhaque-12022024.verify.ibm.com/oidc/endpoint/default/.well-known/openid-configuration"
   #  - name: clientId
   #    value: "cf2ff435-a353-4e74-b383-986c23dddd2f"
+  systemProperties:
+    - name: GarageSaleCCManagerService.endPoint.Address
+      value: 'https://localhost:9443/CreditCardEJB/GarageSaleCCManagerService'
+    - name: GarageSaleStoreManagerService.endPoint.Address
+      value: 'https://localhost:9443/GarageSaleEJB/GarageSaleStoreManagerService'
+    - name: GarageSaleBankManagerService.endPoint.Address
+      value: 'https://localhost:9443/WSBankEJB/GarageSaleBankManagerService'
+    - name: GarageSaleProductShipService.endPoint.Address
+      value: 'https://localhost:9443/GSjsf20LibertyWeb'
+    - name: GarageSaleWebSocket.endPoint.Address
+      value: 'wss://localhost:9443/GSjsf20LibertyWeb'
+    - name: PersonaPMIMetrics.endPoint.Address
+      value: 'wss://localhost:9443/WASPersonaWebServicesPMIWeb'
+    - name: GarageSale.Product.Videos.Cache.Size
+      value: '20'
+    - name: GarageSale.Enable.Dashboard.Metrics
+      value: 'true'
+    - name: GarageSale.Enable.WebSockets.Concurrency
+      value: 'true'
+    - name: WSAT_ROLLBACK_CC
+      value: 'false'
+    - name: WSAT_ROLLBACK_WSBANK
+      value: 'false'
