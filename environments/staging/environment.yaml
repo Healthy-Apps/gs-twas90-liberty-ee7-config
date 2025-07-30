@@ -26,31 +26,39 @@ app:
   
   # List of environment variables that are set for the application
   env:
-    - name: qs.security.username
+    - name: QS_SECURITY_USERNAME
       value: admin
-    - name: app.gsdb.name
+    - name: APP_GSDB_NAME
       value: GSDB
-    - name: app.gsdb.hostname
+    - name: APP_GSDB_HOSTNAME
       value: easej-svt-vm.purple-mystic-butterfly.com
-    - name: app.gsdb.port
+    - name: APP_GSDB_PORT
       value: "60015"
-    - name: app.gsdb.user
+    - name: APP_GSDB_USER
       value: db2inst1
-    - name: app.ccdb.name
+    - name: APP_CCDB_NAME
       value: CCDB
-    - name: app.ccdb.hostname
+    - name: APP_CCDB_HOSTNAME
       value: easej-svt-vm.purple-mystic-butterfly.com
-    - name: app.ccdb.port
+    - name: APP_CCDB_PORT
       value: "60015"
-    - name: app.ccdb.user
+    - name: APP_CCDB_USER
       value: db2inst1
-    - name: app.ccdb.name
-      value: CCDB
-    - name: app.ccdb.hostname
+    - name: APP_WSBANKDB_NAME
+      value: WSBANKDB
+    - name: APP_WSBANKDB_HOSTNAME
       value: easej-svt-vm.purple-mystic-butterfly.com
-    - name: app.ccdb.port
+    - name: APP_WSBANKDB_PORT
       value: "60015"
-    - name: app.ccdb.user
+    - name: APP_WSBANKDB_USER
+      value: db2inst1
+    - name: APP_SESSIONDB_NAME
+      value: SESSIONS
+    - name: APP_SESSIONDB_HOSTNAME
+      value: easej-svt-vm.purple-mystic-butterfly.com
+    - name: APP_SESSIONDB_PORT
+      value: "60015"
+    - name: APP_SESSIONDB_USER
       value: db2inst1
 
   # List of variables that can be referenced in the server.xml
