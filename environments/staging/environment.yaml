@@ -68,25 +68,25 @@ app:
   #  - name: clientId
   #    value: "cf2ff435-a353-4e74-b383-986c23dddd2f"
   systemProperties:
-	- name: GarageSaleCCManagerService.endPoint.Address
-	  value: https://localhost:9443/CreditCardEJB/GarageSaleCCManagerService
-	- name: GarageSaleStoreManagerService.endPoint.Address
-	  value: https://localhost:9443/GarageSaleEJB/GarageSaleStoreManagerService
-	- name: GarageSaleBankManagerService.endPoint.Address
-	  value: https://localhost:9443/WSBankEJB/GarageSaleBankManagerService
-	- namne: GarageSaleProductShipService.endPoint.Address
-	  value: https://localhost:9443/GSjsf20LibertyWeb
-	- name: GarageSaleWebSocket.endPoint.Address
-	  value: wss://localhost:9443/GSjsf20LibertyWeb
-	- name: PersonaPMIMetrics.endPoint.Address
-	  value: wss://localhost:9443/WASPersonaWebServicesPMIWeb
-	- name: GarageSale.Product.Videos.Cache.Size
-	  value: "20"
-	- name: GarageSale.Enable.Dashboard.Metrics
-	  value: true
-	- name: GarageSale.Enable.WebSockets.Concurrency
-	  value: true
-	- name: WSAT_ROLLBACK_CC
-	  value: false
-	- name: WSAT_ROLLBACK_WSBANK
-	  value: false
+    - name: GarageSaleCCManagerService.endPoint.Address
+      value: https://localhost:9443/CreditCardEJB/GarageSaleCCManagerService
+    - name: GarageSaleStoreManagerService.endPoint.Address
+      value: https://localhost:9443/GarageSaleEJB/GarageSaleStoreManagerService
+    - name: GarageSaleBankManagerService.endPoint.Address
+      value: https://localhost:9443/WSBankEJB/GarageSaleBankManagerService
+    - namne: GarageSaleProductShipService.endPoint.Address
+      value: https://localhost:9443/GSjsf20LibertyWeb
+    - name: GarageSaleWebSocket.endPoint.Address
+      value: wss://localhost:9443/GSjsf20LibertyWeb
+    - name: PersonaPMIMetrics.endPoint.Address
+      value: wss://localhost:9443/WASPersonaWebServicesPMIWeb
+    - name: GarageSale.Product.Videos.Cache.Size
+      value: "20"
+    - name: GarageSale.Enable.Dashboard.Metrics
+      value: true
+    - name: GarageSale.Enable.WebSockets.Concurrency
+      value: true
+    - name: WSAT_ROLLBACK_CC
+      value: false
+    - name: WSAT_ROLLBACK_WSBANK
+      value: false
