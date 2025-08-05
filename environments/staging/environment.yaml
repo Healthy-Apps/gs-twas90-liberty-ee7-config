@@ -5,16 +5,16 @@ version: 1.0
 app:
   # build id to deploy. if 'version' is commented out, the application is not deployed
 
-  version: "97881463-a054-4c08-b7c9-2d45ba0bf7bd"
+  version: "258a64a4-843d-4755-860d-75315942fac8"
   # version: ""
   
   # number of instances
   instances:
     # min number of instances. can be 0 for scale to 0. default to 1.
-    min: 1
+    min: 3
     
     # max number of instances. defaults to 1 if min == 0, otherwise defaults to min
-    max: 1
+    max: 6
     
   resources:
     # max cpu. memory limit is based on cpu value: 1:4 memory ratio, e.g. 1 cpu == 4 gb
