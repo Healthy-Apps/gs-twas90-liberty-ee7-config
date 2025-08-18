@@ -3,10 +3,13 @@
 #
 version: 1.0
 app:
-  # build id to deploy. if 'version' is commented out, the application is not deployed
 
-  version: ""
-  # version: ""
+  maven:
+    groupId: com.ibm.ws.svt.gs.twas90.liberty.ease4j.garagesale-ee7
+    artifactId: GarageSaleRuntimeUtil
+    version: "0.0.1-SNAPSHOT"
+    type: zip
+
   
   # number of instances
   instances:
@@ -69,17 +72,17 @@ app:
   #    value: "cf2ff435-a353-4e74-b383-986c23dddd2f"
   systemProperties:
     - name: GarageSaleCCManagerService.endPoint.Address
-      value: 'https://enterprise-application-service-jag:9443/CreditCardEJB/GarageSaleCCManagerService'
+      value: 'https://enterprise-application-service-GarageSale:9443/CreditCardEJB/GarageSaleCCManagerService'
     - name: GarageSaleStoreManagerService.endPoint.Address
-      value: 'https://enterprise-application-service-jag:9443/GarageSaleEJB/GarageSaleStoreManagerService'
+      value: 'https://enterprise-application-service-GarageSale:9443/GarageSaleEJB/GarageSaleStoreManagerService'
     - name: GarageSaleBankManagerService.endPoint.Address
-      value: 'https://enterprise-application-service-jag:9443/WSBankEJB/GarageSaleBankManagerService'
+      value: 'https://enterprise-application-service-GarageSale:9443/WSBankEJB/GarageSaleBankManagerService'
     - name: GarageSaleProductShipService.endPoint.Address
-      value: 'https://enterprise-application-service-jag:9443/GSjsf20LibertyWeb'
+      value: 'https://enterprise-application-service-GarageSale:9443/GSjsf20LibertyWeb'
     - name: GarageSaleWebSocket.endPoint.Address
-      value: 'wss://enterprise-application-service-jag:9443/GSjsf20LibertyWeb'
+      value: 'wss://enterprise-application-service-GarageSale:9443/GSjsf20LibertyWeb'
     - name: PersonaPMIMetrics.endPoint.Address
-      value: 'wss://enterprise-application-service-jag:9443/WASPersonaWebServicesPMIWeb'
+      value: 'wss://enterprise-application-service-GarageSale:9443/WASPersonaWebServicesPMIWeb'
     - name: GarageSale.Product.Videos.Cache.Size
       value: '20'
     - name: GarageSale.Enable.Dashboard.Metrics
