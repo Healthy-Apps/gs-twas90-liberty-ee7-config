@@ -22,6 +22,7 @@
 		<feature>ejbLite-3.2</feature>
 		<feature>jpa-2.1</feature>
 		<feature>jaxrs-2.0</feature>
+		<feature>adminCenter-1.0</feature>
  		<!--  <feature>wsAtomicTransaction-1.2</feature>-->
     </featureManager>
 
