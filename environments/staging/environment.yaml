@@ -27,7 +27,7 @@ app:
   # To get an external URL to access the application
   endpoints: public
 
-  startupTimeout: 15
+  startupTimeout: 40
   
   # List of environment variables that are set for the application
   env:
